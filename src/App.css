@@ -1,0 +1,36 @@
+.container {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1.5em;
+}
+
+/* The container item */
+.item {
+  background: #fff;
+  margin: 0 0 1.5em;
+}
+
+img{
+	width: 100%;
+}
+
+/* container on large screens */
+@media only screen and (min-width: 1024px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+/* container on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+/* container on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .container {
+    column-count: 2;
+  }
+}
